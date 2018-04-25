@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { CustomValidatorsDirective } from './custom-validators.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomValidatorsDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
